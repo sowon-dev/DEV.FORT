@@ -1,0 +1,163 @@
+@CHARSET "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,700;1,800&display=swap');
+/* 전 페이지 공통 적용되는 사항 */ 
+
+* {margin:0; padding:0; border:0 none transparent; box-sizing:border-box;}
+:before, :after {box-sizing:border-box;}
+form, fieldset, p, figure {word-break:normal; word-wrap:break-word; -webkit-font-smoothing: antialiased;}
+html body {word-break:break-all;}
+html[lang="ko"] body, html[lang="en"] body {word-break:keep-all;}
+html, body, div, span, applet, object, iframe, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, article, aside, hgroup, header, footer, figure, figcaption, nav, section { 
+	font-family:"Montserrat", "Noto Sans KR", sans-serif; font-weight:400; letter-spacing:-0.03em; vertical-align:baseline; background:transparent; -webkit-font-smoothing: antialiased;}
+article, aside, hgroup, header, footer, figure, figcaption, nav, section { display: block; }
+body {padding:0;margin:0;box-sizing:border-box; font-size:14px;color:#666; -webkit-font-smoothing: antialiased;}
+ol, ul { list-style:none; }
+blockquote, q { quotes:none; }
+h1, h2, h3, h4, h5, h6, strong, th{font-family:"Montserrat", "Noto Sans KR", sans-serif; font-weight:700; color:#666;}
+h1{font-size:48px; line-height:110%; margin-bottom: 10px;}
+h2{font-size:36px;}
+h3{font-size:32px; line-height:110%; margin-bottom: 10px;}
+h4{font-size:24px;}
+h5{font-size:20px;}
+h6{font-size:16px;}
+
+blockquote:before, blockquote:after,q:before, q:after { content:''; }
+table { border-collapse:collapse; border-spacing:0; table-layout:fixed; width:100%;}
+button { margin:0; padding:0; border:0; font:inherit; color:inherit; background:transparent; overflow:visible; cursor:pointer; line-height:1; }
+a:link, a:visited, a:hover, a,active, a:focus { text-decoration:none; cursor:pointer; color:rgba(0,0,0,0.65);}
+legend, caption { display:none; }
+textarea { resize:vertical; font:inherit; overflow-y:auto; border:1px solid #ddd;}
+input, select { color:inherit; font:inherit; vertical-align: middle; box-sizing:border-box; font-family:"Montserrat", "Noto Sans", sans-serif}
+address, i { font-style:normal; }
+table { border-collapse:collapse; table-layout:fixed; }
+img, select, input, button { vertical-align:middle; }
+em { font-style:normal; }
+select{height:38px; border:1px solid #ddd; padding:0 15px;}
+input[type=text] {font-size:14px; border:1px solid #ddd; padding:5px 7px; margin:5px 0; height:38px; }
+input[type=reset]{width:120px; height:38px; background-color:#ddd; color:#aaa; margin:5px 0;} 
+input[type=button], button[type=submit], input[type=submit]{
+	width:120px; height:38px; font-weight:600; letter-spacing:1px; border: 0; border-radius:3px; color:#fff; margin:5px 0; cursor:pointer;
+	background: #36D1DC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+} 
+
+input[type=text]::-ms-clear{ display: none; }
+
+.por { position:relative;}
+.tl {text-align:left !important;}
+.tr {text-align:right !important;}
+.tc {text-align:center !important;}
+.fl { float:left !important;}
+.fr { float:right !important;}
+.clear { clear:both;}
+.vt { vertical-align:top !important;}
+.vm { vertical-align:middle !important;}
+.vtb { vertical-align:text-bottom !important;}
+.dpi { display:inline;}
+.dpb { display:block;}
+.dpib { display:inline-block;}
+.dpn { display:none;}
+.clear:after { content:''; display:block; clear:both;}
+.ellipsis { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.blind { overflow:hidden; position:absolute; top:0; left:0; width:0; height:0; font-size:0;}
+
+/* 포인트컬러 */ 
+.pointM {color:#36d1dc !important;}
+.pointB {color:#5b86e5 !important;}
+.alert{color:salmon !important;}
+
+/* 헤더 아래 뷰 시작되는 영역 */ 
+#viewContainer{margin:60px 0 100px 0; display:block; width:100%;}
+
+/* 탑버튼 */
+#quick {position:fixed; bottom:46px; right:40px; width:60px; border:0 none !important; z-index:100;}
+#quick button {width:62px; height:61px; background:#333; display:block; color:#fff; transition:.8s;}
+#quick button:hover {background-position:0 0; background:#fff; color:#333; border:1px solid #aaa;}
+#quick.off {position:absolute; top:-110px; bottom:auto;}
+
+/* HEADER */ 
+#headerContainer{width:100%; position:relative; z-index:100;}
+#headerSection{width:1200px; position:absolute; top:13px; left:50%; transform:translateX(-50%); background-color:transparent;}
+#logoSection{width:50px; float:left;}
+#logoSection img{width:100%;}
+#menuSection{float:right;}
+#menuSection ul li{float:left; margin:14px 14px 0 0;}
+#menuSection ul li:LAST-OF-TYPE {margin-right:0;}
+#menuSection ul li a{font-size:16px; font-weight:600; color:#fff; transition:0.5s;}
+#menuSection ul li a:hover{color:#36d1dc;}
+
+/* PAGING */
+.pagination{width:100px; margin:0px auto; text-align: center;}
+.pagination ul {padding:40px 0 20px 0;}
+.pagination ul li{float:left; width:20%;}
+
+/* FOOTER */
+
+#foot {position:relative; background:#14151d;}
+#foot nav .gnbFoot{float:left;}
+#foot nav, #foot > section, #foot div menu.gnbFoot, #foot > div ul {width:1200px; margin:0 auto; display:table;}
+#foot nav menu.gnbFoot > li, #foot section > *, #foot > div ul li {vertical-align:top; display:table-cell;}
+#foot nav {padding:0 0 40px 0; display:block;}
+#foot nav menu.gnbFoot > li:not(:last-child) {width:180px;}
+#foot nav menu.gnbFoot > li:before {width:1px; height:30px; margin-bottom:54px; background:rgba(255,255,255,0.30); display:block; content:"";}
+#foot nav h3 {margin-bottom:14px; font-size:14px; color:#ccc; font-weight:500; letter-spacing:0;}
+#foot nav a {color:#999; font-weight:500;}
+#foot nav menu menu li {margin-top:6px;}
+#foot nav .about {margin:48px 0;}
+#foot nav .about > li {margin-right:16px; display:inline-block;}
+#foot nav .about > li:first-child a {color:#bbb; font-weight:700;}
+#foot section h1 {position:relative; width:400px; text-align:center;}
+#foot section h1:after {position:absolute; left:50%; bottom:0; width:300px; height:9px; margin-left:-150px; background:rgba(255,255,255,0.20); display:block; content:"";}
+#foot address {padding:0 0 76px 150px; font-size:12px; color:#555;}
+#foot address:before {width:1px; height:30px; margin-bottom:54px; background:rgba(255,255,255,0.30); display:block; content:"";}
+#foot address aside {float:right; padding-top:2px;}
+#foot address aside figure {display:table;}
+#foot address aside figure > * {vertical-align:middle; display:table-cell;}
+#foot address aside figure:not(:first-of-type) {margin-top:18px;}
+#foot address aside figure span {width:43px; padding-right:10px; text-align:center;}
+#foot address aside figure figcaption {font-size:11px; line-height:15px; color:rgba(255,255,255,0.60); text-align:left;}
+#foot address aside figure figcaption strong {font-weight:700;}
+#foot address aside figure:first-of-type span img {width:33px;}
+#foot address aside figure:nth-of-type(2) span img {width:24px;}
+#foot address dl.contact {height:auto; margin-bottom:23px; color:#999; overflow:hidden;}
+#foot address dl.contact > dt {clear:both; float:left; margin-right:10px; font-weight:700;}
+#foot address dl.contact > dd {font-size:18px;}
+#foot address dl.contact > dt:not(:first-of-type), #foot address dl.contact > dd:not(:first-of-type) {margin-top:4px;}
+#foot address dl.contact a {color:#999;}
+#foot address dl.addr {clear:both; height:auto; overflow:hidden;}
+#foot address dl.addr dt, #foot section address dl.addr dd:not(:nth-of-type(2)):not(:nth-of-type(3)) {float:left; display:block;}
+#foot address dl.addr dt:not(:nth-of-type(5)) {clear:both;}
+#foot address dl.addr dd:not(:first-of-type) {padding-left:6px;}
+#foot address dl.addr dd:nth-of-type(2):before, #foot address dl.addr dd:nth-of-type(3):before, #foot address dl.addr dt:nth-of-type(5):before {width:1px; height:10px; margin:0 10px; background:#5b5c61; vertical-align:-1px; display:inline-block; content:"";}
+#foot address p {margin-top:18px;}
+#foot div.link {float:right; margin:-42px -22px;}
+#foot div.link .select2 {width:165px !important;}
+#foot > div {border-top:1px solid #2c2d34; border-bottom:1px solid #2a2b32;}
+#foot > div ul li {height:149px; vertical-align:middle; opacity:0.5;}
+#foot > div ul li:not(:last-child) {padding-right:43px;}
+#foot > div ul li:last-child {text-align:right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
