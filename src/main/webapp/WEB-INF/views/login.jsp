@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<%@ include file="/include/header.jsp" %>
+<%@ include file="../include/header.jsp" %>
 <!-- 헤더 영역 -->
 <!-- 메인 슬라이드 -->
 <div id="subContainer">
@@ -42,6 +42,6 @@
 
 
 <!-- Footer -->
-<%@ include file="/include/footer.jsp" %>
+<%@ include file="../include/footer.jsp" %>
 </body>
 </html>
