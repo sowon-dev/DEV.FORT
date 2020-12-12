@@ -21,7 +21,10 @@ h3{font-size:32px; line-height:110%; margin-bottom: 10px;}
 h4{font-size:24px;}
 h5{font-size:20px;}
 h6{font-size:16px;}
-
+.mgt30{margin-top:30px !important;}
+.mgt120{margin-top:120px !important;}
+.pdt120{padding-top:120px !important;}
+.wth100{width:100% !important;}
 blockquote:before, blockquote:after,q:before, q:after { content:''; }
 table { border-collapse:collapse; border-spacing:0; table-layout:fixed; width:100%;}
 button { margin:0; padding:0; border:0; font:inherit; color:inherit; background:transparent; overflow:visible; cursor:pointer; line-height:1; }
@@ -35,6 +38,7 @@ img, select, input, button { vertical-align:middle; }
 em { font-style:normal; }
 select{height:38px; border:1px solid #ddd; padding:0 15px;}
 input[type=text] {font-size:14px; border:1px solid #ddd; padding:5px 7px; margin:5px 0; height:38px; }
+input[type=password] {font-size:14px; border:1px solid #ddd; padding:5px 7px; margin:5px 0; height:38px; }
 input[type=reset]{width:120px; height:38px; background-color:#ddd; color:#aaa; margin:5px 0;} 
 input[type=button], button[type=submit], input[type=submit]{
 	width:120px; height:38px; font-weight:600; letter-spacing:1px; border: 0; border-radius:3px; color:#fff; margin:5px 0; cursor:pointer;
@@ -89,10 +93,69 @@ input[type=text]::-ms-clear{ display: none; }
 #menuSection ul li a{font-size:16px; font-weight:600; color:#fff; transition:0.5s;}
 #menuSection ul li a:hover{color:#36d1dc;}
 
+/* 서브 헤더 */
+#subContainer{position: relative; width:100%;}
+#subSection{width:100%; height:450px; 
+			background:url("../img/sub.jpg"); background-attachment: fixed; background-size:cover; background-position-y:-317px;}
+#subSection .mainCopy{position:relative; top:36%; width: 100%; text-align:center;}
+#subSection .mainCopy h1, h6{color:#fff;}
+#subSection .mainCopy h6{font-weight:500;}
+#subSection .mainButton{position:static;}
+
+#loginSection{width:100%; height:400px; 
+			background:url("../img/login.jpg"); background-attachment: fixed; background-size:cover; background-position-y:-317px;}
+#loginSection .mainCopy{position:relative; top:36%; width: 100%; text-align:center;}
+#loginSection .mainCopy h1, h6{color:#fff;}
+#loginSection .mainCopy h6{font-weight:400;}
+#loginSection .mainButton{position:static;}
+
+
+
+/* 서브검색영역 */
+#subContainer{width:100%;}
+#searchSection{width:1200px; margin:0 auto; padding:60px 0 0 0; text-align: center;}
+#searchSection h3{color:#fff !important;}
+#searchSection p{font-size:16px; font-weight:500; color:#999;}
+#searchSection #searchBox{width:100%; border:1px solid #ddd; border-radius:5px; 
+						  margin:20px 0; padding:30px 40px;}
+#searchSection #searchBox input[type="text"]{width:39%;}
+#searchSection #searchBox .formBox{}
+#searchSection #searchBox .mySearchBox{margin-top:10px; height:33px; }
+#searchSection #searchBox .mySearchBox ul li{width:15.89%; line-height:34px; float:left; margin-right:10px; padding:0 6px; border-radius:4px; background:#eee;  transition:0.5s;}
+#searchSection #searchBox .mySearchBox ul li a{color:#999; display:block;}
+#searchSection #searchBox .mySearchBox ul li a:hover{color:#fff; display:block;}
+#searchSection #searchBox .mySearchBox ul li:hover{display:block; color:#fff;
+												   background: #36D1DC;  /* fallback for old browsers */
+												   }
+#searchSection #searchBox .mySearchBox ul li:FIRST-OF-TYPE{background:transparent; font-size:16px; font-weight:600; color:#999;}
+#searchSection #searchBox .mySearchBox ul li:LAST-OF-TYPE{margin-right:0;}
+
+
+/* 서브 페이지 영역  */
+#ScrollsubArea{margin:60px auto 100px auto; width:1200px;} /* 사이드바 있는 경우*/
+#NoScrollsubArea{margin:60px auto 100px auto; width:1200px;} /* 사이드바 있는 경우*/
+#sideBarContainer{width:18%; border:1px solid #eee; padding:20px 20px; border-radius:5px; float:left;}
+#sideBarContainer ul{margin:20px 0 150px 0;}
+#sideBarContainer hr{height:1px; background:#ddd; margin:13px 0;}
+#sideBarContainer ul li{font-size:16px; font-weight:300; color:#666; margin-bottom:3px;}
+#sideBarContainer ul li a:hover{color:#36d1dc; font-weight:500;}
+#ScrollsubArea #subContentArea{width:80%; margin-left:20px; border:1px solid #eee; border-radius:5px; padding:30px 30px; float:right;}
+#NoScrollsubArea #subContentArea{width:100%;}
+#NoScrollsubArea #subContentArea .loginLogo{text-align:center;}
+#NoScrollsubArea #subContentArea .loginForm{width:30%; margin:0 auto 60px auto;}
+#NoScrollsubArea #subContentArea .loginForm p{margin-top:10px;}
+#NoScrollsubArea #subContentArea .loginForm input{height:42px; border-radius:4px;}
+#NoScrollsubArea #subContentArea .loginForm input[type="text"]{width:100%;}
+#NoScrollsubArea #subContentArea .loginForm input[type="password"]{width:100%;}
+#NoScrollsubArea #subContentArea .loginForm .googleLogin{border:1px solid #ccc; background:#fff; color:#333;}
+#NoScrollsubArea #subContentArea .loginForm .findUser{border:1px solid #ccc; background:#eee; color:#999;}
+
+
 /* PAGING */
 .pagination{width:100px; margin:0px auto; text-align: center;}
 .pagination ul {padding:40px 0 20px 0;}
 .pagination ul li{float:left; width:20%;}
+
 
 /* FOOTER */
 
