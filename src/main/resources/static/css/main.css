@@ -17,7 +17,7 @@
 #searchSection p{font-size:16px; font-weight:500; color:#999;}
 #searchSection #searchBox{width:100%; border:1px solid #ddd; border-radius:5px; 
 						  margin:20px 0; padding:30px 40px;}
-#searchSection #searchBox input[type="text"]{width:52%;}
+#searchSection #searchBox input[type="text"]{width:39%;}
 #searchSection #searchBox .formBox{}
 #searchSection #searchBox .mySearchBox{margin-top:10px; height:33px; }
 #searchSection #searchBox .mySearchBox ul li{width:15.89%; line-height:34px; float:left; margin-right:10px; padding:0 6px; border-radius:4px; background:#eee;  transition:0.5s;}
