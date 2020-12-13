@@ -44,7 +44,7 @@
 	                </dl>
 	                <dl class="addr">
 	                    <dd>개발자들</dd>
-	                    <dd>이소원 / 박은주 </dd>
+	                    <dd>김소원 / 박은주 </dd>
 	                    <dt>사업자등록번호</dt>
 	                    <dd>XXX-XX-XXXXX</dd>
 	                    <dt>통신판매 신고번호</dt>
