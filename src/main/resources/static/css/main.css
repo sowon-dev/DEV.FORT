@@ -29,6 +29,11 @@
 #searchSection #searchBox .mySearchBox ul li:FIRST-OF-TYPE{background:transparent; font-size:16px; font-weight:600; color:#999;}
 #searchSection #searchBox .mySearchBox ul li:LAST-OF-TYPE{margin-right:0;}
 
+/* 입사지원하기+목록으로 버튼css */
+.mySearchBox ul li{
+	width:15.89%; line-height:34px; float:left; margin-right:10px; padding:0 6px; border-radius:4px; background:#eee;  transition:0.5s;
+}
+
 /* 썸네일 영역 */
 #thumbnailContainer{width:100%; margin-bottom:80px;}
 #thumbnailSection{width:1200px; margin:0 auto; padding:20px 0 60px;}
